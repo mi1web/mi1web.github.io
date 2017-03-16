@@ -1,88 +1,127 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>Creando tu primera web en GitHub</title>
+    
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css">
+    <link rel="stylesheet" href="css/theme/extra.css">
+    
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+	<section><h1>Cuenta en <a
+				  href='http://github.com'>https://github.com</a></h1>
 
-		<title>Creando tu primera web en GitHub</title>
+	  <aside class='notes'>Deberías descargar git,
+	    pero este es un mini-tutorial y lo vamos a
+	    dejar para otra ocasión</aside>
+	</section>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/white.css">
-		<link rel="stylesheet" href="css/theme/extra.css">
+	<section>
+	  <h1><em>Repositorio</em> para la web</h1>
+	  <h1><code>+</code></h1>
+	  <h2 class='fragment'>New repository</h2>
+	  <h3 class='fragment'>Nombre:
+	    <code>prueba</code> (o el que se quiera).</h3>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+	  <aside class='notes'>Hoy en día cualquier desarrollo
+	  informático, incluyendo páginas web, debe de estar en un
+	  sistema de control de versiones tal como GitHub. Eso permite
+	  hacer cambios, saber quién los ha hecho, revertir a
+	    versiones anteriores, y por supuesto <em>desplegar</em> la
+	    web usando buenas prácticas en vez de ñapas como copiar
+	    .zip. No es la única forma de publicar páginas web. Se
+	  puede usar Google Sites (aunque no se tiene mucho control),
+	  Dropbox o Google Drive. GitHub te premite publicar páginas
+	  sin publicidad y con todo el código controlado por ti. 
+	  </aside>
+	</section>
+	
+	<section>
+	  <section>
+	    <h1><em>Create new file</em></h1>
+	    <h2 class='fragment'><code>index.html</code></h2>
+	  </section>
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-			  <section><h1>Cuenta en <a
-		href='http://github.com'>https://github.com</a></h1>
+	  <section>
+	    <pre><code>&lt;!doctype html>
+&lt;html>
+  &lt;head>
+    &lt;title>Mi primera página&lt;/title>
+  &lt;/head>
+  &lt;body>&lt;h1>Título que aparecerá en la página&lt;/h1>
+    &lt;p>Texto de la página&lt;/p>
+  &lt;/body>
+&lt;/html>
+	    </code></pre>
+	  </section>
 
-			  <aside class='notes'>Deberías descargar git,
-			  pero este es un mini-tutorial y lo vamos a
-			    dejar para otra ocasión</aside>
-			  </section>
+	  <section data-background='img/guarda.png'>
+	  </section>
+	  
+	  <section>
+	    <h1>Configuremos la página</h1>
+	  </section>
 
-			  <section>
-			    <h1>Crea un repositorio para la web</h1>
-			    <h1><code>+</code></h1>
-			    <h2 class='fragment'>New repository</h2>
-			    <h3 class='fragment'>Nombre:
-			      <code>prueba</code> (o el que se quiera).</h3>
-			  </section>
+	  
 
-			  <section>
-			    <section>
-			      <h1><em>Create new file</em></h1>
-			      <h2 class='fragment'><code>index.html</code></h2>
-			    </section>
-			    
-			    <section>
-			      <h1>Configuremos la página</h1>
-			    </section>
+	</section>
 
-			  </section>
+	<section>
+	  <section><h1>HTML == lenguage de
+	      descripción <em>estructural</em></h1>
 
-			  <section>
-			    <section><h1>HTML == lenguage de
-			      descripción <em>estructural</em></h1>
-			  </section>
+	    <aside class='notes'>Lo que implica que no se describe
+	    la <em>apariencia</em> de la página, sino su contenido y
+	    la estructura del mismo: esto es la cabecera, esto es una
+	    parte, esta parte está aparte de esa parte... Es
+	    importante tener esto en cuenta, porque tiene todo tipo de
+	    repercusiones a la hora de crear una página fácilmente
+	    renderizable por todo tipo de navegador y analizable por
+	      los buscadores para encontrar su contenido.</aside>
+	  </section>
 
-			  <section>
-			    <section><h1>Editemos <code>index.html</code> desde la web</h1></section>
-
-			    <section><h1>Elementos HTML entre &lt; y &gt;</h1>
-			    </section>
-
-			    <section><h1>Cada elemento &lt;h1&gt; su antielemento &lt;/h1&gt;</h1></section>
-
-			    <section><h1>Elementos tienen <em>atributos</em></h1>
-			      <h2 class='fragment'>→ Datos adicionales</h2> </section>
-
-			    <section><h1>Añadamos títulos con <code>h1</code></h1></section>
-
-			    <section><h1>Añadamos enlace a nuestro perfil en github</h1>
-			      <pre class='fragment'><code><a href='http://github.com/miperfil'>Mi perfil en GitHub</a></code></pre>
-			      <h2 class='fragment'>Guardar con mensaje "Añade enlaces"</h2>
-			    </section>  
-			  </section>
-
-			  <section>
-			    <h1>Tu primera web está lista</h1>
-			  </section>
-			  
-			</div>
-		</div>
+	  <section>
+	    <section><h1>Editemos <code>index.html</code> desde la web</h1></section>
+	    
+	    <section><h1>Elementos HTML entre &lt; y &gt;</h1>
+	    </section>
+	    
+	    <section><h1>Cada elemento &lt;h1&gt; su antielemento &lt;/h1&gt;</h1></section>
+	    
+	    <section><h1>Elementos tienen <em>atributos</em></h1>
+	      <h2 class='fragment'>→ Datos adicionales</h2> </section>
+	    
+	    <section><h1>Añadamos títulos con <code>h1</code></h1></section>
+	    
+	    <section><h1>Añadamos enlace a nuestro perfil en github</h1>
+	      <pre class='fragment'><code><a href='http://github.com/miperfil'>Mi perfil en GitHub</a></code></pre>
+	      <h2 class='fragment'>Guardar con mensaje "Añade enlaces"</h2>
+	    </section>  
+	  </section>
+	  
+	  <section>
+	    <h1>Tu primera web está lista</h1>
+	  </section>
+	  
+      </div>
+    </div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
