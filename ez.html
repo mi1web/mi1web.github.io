@@ -87,12 +87,13 @@
 			    <section>
 			      <pre><code>git checkout gh-pages</code></pre>
 				
-			      <pre class='fragment'><code>git push https://github.com/minick/minick.github.io.git gh-pages:master</code></pre>
+			      <pre class='fragment'><code>git push \
+    https://github.com/minick/minick.github.io.git gh-pages:master</code></pre>
 
 			      <h2 class='fragment'>Comprobar en
 				GitHub</h2>
 
-			      <aside class='note'>Aquí hemos creado
+			      <aside class='notes'>Aquí hemos creado
 			    una página automáticamente usando
 			    `gh-pages` y la hemos usado como nuestra
 			    página personal, pasando de la rama
@@ -124,7 +125,13 @@
 			  </section>
 
 			  <section>
-			    <section><h1>Editemos <code>index.html</code> desde la web</h1></section>
+			    <section><h1>Editemos
+			      <code>index.html</code> desde la web</h1>
+
+			      <aside class='notes'>Lo podéis hacer
+				localmente si queréis usando vuestro
+				editor favorito.</aside>
+			    </section>
 
 			    <section><h1>Elementos HTML entre &lt; y &gt;</h1>
 			    </section>
@@ -157,15 +164,15 @@
 		<script>
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				history: true,
-
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
+			  history: true,
+			  width: '95%',
+			  // More info https://github.com/hakimel/reveal.js#dependencies
+			  dependencies: [
+			    { src: 'plugin/markdown/marked.js' },
+			    { src: 'plugin/markdown/markdown.js' },
+			    { src: 'plugin/notes/notes.js', async: true },
+			    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+			  ]
 			});
 		</script>
 	</body>
