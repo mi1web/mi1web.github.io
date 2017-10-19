@@ -25,12 +25,14 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-			  <section><h1>Cuenta en <a
+			  <section><h1>Cuenta en 
 		href='http://github.com'>https://github.com</a></h1></section>
 
 			  <section><h1>Descarga `git`</h1>
 
 			    <pre><code>sudo apt-get install git</code></pre>
+
+			    <aside class='notes'>Te puedes descargar el cliente de Mac o Windows, que lo incluye, en otro caso</aside>
 			  </section>
 
 			  <section>
@@ -48,7 +50,16 @@
 			    <pre><code>git clone https://github.com/minick/mi1web.git</code></pre>
 			    </section>
 
-			    <section><h1>Tres opciones</h1>
+			    <section><h1>Editamos y subimos</h1>
+			      <h2>Markdown FTW</h2>
+
+			      <pre><code>git push</code></pre>
+
+			      <aside class='notes'>Habrá que configurar unas cuantas cosas previamente, si se está usando git por primera vez</aside>
+
+			    </section>
+			    
+			    <section><h1>Tres opciones para generar página</h1>
 			      <h2 class='fragment'><em>In
 				situ</em></h2>
 			      <h2 class='fragment'>Subdirectorio
@@ -69,45 +80,18 @@
 			  
 			  </section>
 
+			  <!-- Trabajar con la página ya configurada -->
 			  <section>
-			    <section>
-			      <h1>Creamos espacio personal estilo
-				<code>jj.github.io</code>
-			      </h1>
+			    <section><h1>Descarga fichero de configuración</h1>
+			      <pre><code>git pull</code></pre>
 			    </section>
-
-			    <section>
-			        <h1><code>+</code></h1>
-				<h2 class='fragment'>New repository</h2>
-				<h3 class='fragment'>Nombre:
-			        <code>minick.github.io</code>;
-			        <strong>no marcar nada</strong></h3>
-			    </section>
-
-			    <section>
-			      <pre><code>git checkout gh-pages</code></pre>
-				
-			      <pre class='fragment'><code>git push \
-    https://github.com/minick/minick.github.io.git gh-pages:master</code></pre>
-
-			      <h2 class='fragment'>Comprobar en
-				GitHub</h2>
-
-			      <aside class='notes'>Aquí hemos creado
-			    una página automáticamente usando
-			    `gh-pages` y la hemos usado como nuestra
-			    página personal, pasando de la rama
-				gh-pages del original a la rama master del nuevo</aside>
-			    </section>
-
-			    <section>
-			      <h1>Comprobar en <code>https://minick.github.io</code>
-			      </h1>
-			    </section>
-
+			    
 			  </section>
 
 			  <section>
+
+			    <section><h1>Jekyll bajo la capucha</h1></section>
+			    
 			    <section>
 			      <h1>Desarrollador → Consola web</h1>
 			    </section>
@@ -125,33 +109,34 @@
 			  </section>
 
 			  <section>
-			    <section><h1>Editemos
-			      <code>index.html</code> desde la web</h1>
 
-			      <aside class='notes'>Lo podéis hacer
-				localmente si queréis usando vuestro
-				editor favorito.</aside>
+			    <section><h1>Descarga web</h1>
+			      <pre><code>mv index.html web.html
+git add web.html
+git commit -am "Añade otra web"</code></pre>
 			    </section>
-
+			    
 			    <section><h1>Elementos HTML entre &lt; y &gt;</h1>
 			    </section>
-
+			    
 			    <section><h1>Cada elemento &lt;h1&gt; su antielemento &lt;/h1&gt;</h1>
 			      <h2 class='fragment'>→ <em>Nudos</em> del árbol</h2>
 			    </section>
-
+			    
 			    <section><h1>Elementos tienen <em>atributos</em></h1>
 			      <h2 class='fragment'>→ Datos adicionales</h2> </section>
-
+			    
 			    <section><h1>Añadamos títulos con <code>h1</code></h1></section>
+			    
+			  <section><h1>Añadamos enlaces a Granada Geek</h1>
+			    <pre class='fragment'><code><a href='https://www.meetup.com/es-ES/preview/Granada-Geek'>
+				  Mi perfil en GitHub
+			    </a></code></pre>
+			    <h2 class='fragment'><pre><code>git commit -am  "Añade enlaces"</code></pre></h2>
+			  </section>  
+</section>
 
-			    <section><h1>Añadamos enlace a nuestro perfil en github</h1>
-			      <pre class='fragment'><code><a href='http://github.com/miperfil'>Mi perfil en GitHub</a></code></pre>
-			      <h2 class='fragment'>Guardar con mensaje "Añade enlaces"</h2>
-			    </section>  
-			  </section>
-
-			  <section>
+<section>
 			    <h1>Tu primera web está lista</h1>
 			  </section>
 			  
